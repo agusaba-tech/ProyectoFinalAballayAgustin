@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% extends "Registros/padre.html" %}
+
+    {% load static %}
+
+    {% block barrasnav %} 
+    <li class="nav-item"><a class="nav-link" href="{% url 'inicio'%}">Inicio</a></li> 
+    <li class="nav-item"><a class="nav-link" href="{% url 'Comprador' %}">Comprador</a></li>
+    <li class="nav-item"><a class="nav-link" href="{%  url 'Producto' %}">Producto</a></li>
+    <li class="nav-item"><a class="nav-link" href="{% url 'Vendedor' %}">Vendedor</a></li>
+    <li class="nav-item"><a class="nav-link" href="{% url 'Busqueda' %}">Buscar</a></li>
+    {% endblock %}
+    
+</body>
+</html>
