@@ -1,5 +1,5 @@
 Tercera pre- entrega Agustin Aballay 
-La página arranca desde http://127.0.0.1:8000/inicio/ donde se observa un template con navegación en el margen superior derecho. Este template se encuentra dentro de la app 'Registros' bjao el nombre 'inicio'.
+La página arranca desde http://127.0.0.1:8000/inicio/ donde se observa un template con navegación en el margen superior derecho. Este template se encuentra dentro de la app 'Registros' bajo el nombre 'inicio'. El url de proyecto se redirecciona al de la app bajo 'include'.
 'inicio' hereda de 'padre' el formato y se reemplaza la barra de navegación bajo el block barrasnav
 
 Dentro de la navegación se puede ir a 'Comprador', 'Producto' , 'Vendedor' y 'Buscar'
