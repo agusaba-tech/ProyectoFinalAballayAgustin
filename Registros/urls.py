@@ -3,7 +3,7 @@ from Registros import views
 
 
 urlpatterns = [
-    path('inicio/', views.inicio, name='inicio'),  
+    path('', views.inicio, name='inicio'),  
     path('Comprador/', views.Comp, name='Comprador'),
     path('Vendedor/', views.Vend, name='Vendedor'),
     path('Producto/', views.Prod, name='Producto'),
