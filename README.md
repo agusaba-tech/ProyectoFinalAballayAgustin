@@ -5,6 +5,12 @@ Dentro de la página, también existe una sección para Registrar un usuario nue
 
 Por último, se incluye una seccion "about" donde se brinda breve información del developer (yo)
 
+La pagina se diseño con dos Apps de django : 
+- Users: conitene todo lo del registro del usuario y modficiaciones del perfil y deslogueo.
+- Registro: Contiene todo lo referido al CRUD.
+
+
+
 
 Se deja video de la utilización de la página. 
 Nota: para la utilización de avatares precise incluir "Pillow". 
