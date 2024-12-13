@@ -1,18 +1,14 @@
-Tercera pre- entrega Agustin Aballay 
-La página arranca desde http://127.0.0.1:8000/inicio/ donde se observa un template con navegación en el margen superior derecho. Este template se encuentra dentro de la app 'Registros' bajo el nombre 'inicio'. El url de proyecto se redirecciona al de la app bajo 'include'.
-'inicio' hereda de 'padre' el formato y se reemplaza la barra de navegación bajo el block barrasnav
+Entrega final V1 de Proyecto final Coderhouse
+Foco de página: El foco de la página diseñada simula un sitio web para compra de productos. La página emula una primera versión donde sin estar logueado el usuario puede hacer CRUD sobre productos. Sin embargo, el mismo no puede Agregar compradores ni vendedores. 
+Una vez logueado, el usuario mantiene los permisos del CRUD pero puede añadir compradores y vendedores y editar su usuario agregando avatares y modificando sus datos.
+Dentro de la página, también existe una sección para Registrar un usuario nuevo y desloguearse en caso de ya  haber ingresado.
 
-Dentro de la navegación se puede ir a 'Comprador', 'Producto' , 'Vendedor' y 'Buscar'
-Cuando se selecciona alguno de estos botones, se redirecciona al usuario a cada template. 
-En el Template 'Comprador', se ingresa a la base de datos Nombre y Apellido del comprador bajo dos campos de caracteres de un máximo de 30. Una vez ingresados los campos bajo el botón "enviar" devuelve a la página principal.
-En el Template 'Vendedor', se ingresa a la base de datos Nombre y Apellido del vendedor bajo dos campos de caracteres de un máximo de 30. Una vez ingresados los campos bajo el botón "enviar" devuelve a la página principal.
-En el Template 'Producto', se ingresa a la base de datos Nombre y Cantidad del producto comprado bajo un campo de caracteres de un máximo de 30 para el Nombre y un campo de números para la cantidad sin máximo.Una vez ingresados los campos bajo el botón "enviar" devuelve a la página principal.
-En el Template 'Buscar', se solicita ingresar un valor de caracteres con un máximo de 30. Luego, se busca en la base de datos ese valor y se devuelve la cantidad comprada por cada comprador.
+Por último, se incluye una seccion "about" donde se brinda breve información del developer (yo)
 
 
-Los modelos definidos para esta entrega son Comprador (campos: Nombre y Apellido), Producto(campos: Nombre y Cantidad) y Vendedor(campos: Nombre y Apellido).
+Se deja video de la utilización de la página. 
+Nota: para la utilización de avatares precise incluir "Pillow". 
 
-Valores precargados en la BD
-Comprador: Agustin Aballay/ Agustin Aballay/Agustin Perez/Jorge Benitez 
-Producto: Iphone 3512/ Iphone 3512 / Telefono 5432 / Pelota 1234
-Vendedor: Roman Riquelme/
+
+Link a video: https://youtu.be/Qw4hXn-Dcfc
+
