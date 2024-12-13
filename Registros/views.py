@@ -2,10 +2,16 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from Registros.models import Comprador,Vendedor,Producto
 from Registros.forms import FormularioComp,FormularioVend, FormularioProd
+from django.contrib.auth.decorators import login_required
+
 
 def inicio(req):
     return render(req, 'Registros/inicio.html')
 
+def about(req):
+    return render(req, 'Registros/about.html')
+
+@login_required
 def Comp(request):
 
     if request.method == "POST": 
@@ -22,6 +28,7 @@ def Comp(request):
         
     return render(request, "Registros/Formulario_Comprador.html", {"FormC": FormC})
 
+@login_required
 def Vend(request):
 
     if request.method == "POST": 
@@ -37,6 +44,7 @@ def Vend(request):
         FormV = FormularioVend()  
         
     return render(request, "Registros/Formulario_Vendedor.html", {"FormV": FormV})
+
 
 def Prod(request):
 

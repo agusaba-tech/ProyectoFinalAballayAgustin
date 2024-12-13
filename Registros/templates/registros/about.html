@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Presentación de Persona</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 800px;
+            overflow: hidden;
+            padding: 30px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            font-size: 2.5em;
+            color: #333;
+        }
+        .header p {
+            font-size: 1.1em;
+            color: #666;
+        }
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .profile h2 {
+            font-size: 2em;
+            color: #333;
+        }
+        .profile .bio {
+            font-size: 1.2em;
+            color: #555;
+            max-width: 600px;
+            margin: 20px 0;
+        }
+        .profile .contact-info {
+            list-style: none;
+            padding: 0;
+        }
+        .profile .contact-info li {
+            margin: 10px 0;
+        }
+        .contact-info a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Bienvenido a mi página</h1>
+            <p>Conoce más sobre mí y mi trayectoria.</p>
+        </div>
+
+        <div class="profile">
+            <!-- Aquí va la imagen de la persona -->
+            <img src="https://media.licdn.com/dms/image/v2/D4D03AQFhIa8oFxMIMQ/profile-displayphoto-shrink_800_800/B4DZOPC3_hHMAk-/0/1733271716552?e=1739404800&v=beta&t=m3eWlCwRVK-eF-BxL5agdLTgbv_VTBwR9BviE68TC1U" alt="Foto de la persona">
+            <h2>Agustin Aballay</h2>
+            <p class="bio">Soy estudiante de CoderHouse de la comisión 60085 de Python y este es mi proyecto final!.</p>
+
+            <h3>Contacto</h3>
+            <ul class="contact-info">
+                <li><strong>Email:</strong> <a href="mailto:juan@example.com">agustinaballay@gmail.com</a></li>
+                <li><strong>Redes Sociales:</strong>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/agustinaballaygarcia/" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://twitter.com/agusaba" target="_blank">Twitter</a></li>
+
+                        <a href="{% url 'inicio'%}">Volver a inicio</a>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    
+
+</body>
+</html>

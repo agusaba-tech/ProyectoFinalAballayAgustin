@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Productos</h1>
+
+    {% for producto in object_list %}
+
+            <p>{{ producto.Nombre }}</p>
+            <p>
+                <a href="{% url 'Detail' producto.id %}">Ver</a>
+                <a href="{% url 'Edit' producto.id %}">Editar</a>
+                <a href="{% url 'Delete' producto.id %}">Borrar</a>
+            </p>
+
+    {% endfor %}
+
+
+    <a href="{% url 'inicio'%}">Volver a inicio</a>
+</body>
+</html>

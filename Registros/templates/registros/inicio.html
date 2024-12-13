@@ -5,7 +5,21 @@
 {% block barrasnav %} 
 <li class="nav-item"><a class="nav-link" href="{% url 'inicio'%}">Inicio</a></li> 
 <li class="nav-item"><a class="nav-link" href="{% url 'Comprador' %}">Comprador</a></li>
-<li class="nav-item"><a class="nav-link" href="{%  url 'Producto' %}">Producto</a></li>
+<li class="nav-item"><a class="nav-link" href="{%  url 'New' %}">Producto</a></li>
+<li class="nav-item"><a class="nav-link" href="{%  url 'List' %}">Lista de productos</a></li>
 <li class="nav-item"><a class="nav-link" href="{% url 'Vendedor' %}">Vendedor</a></li>
 <li class="nav-item"><a class="nav-link" href="{% url 'Busqueda' %}">Buscar</a></li>
-{% endblock %}
+<li class="nav-item"><a class="nav-link" href="{% url 'login' %}">Login</a></li>
+<li class="nav-item"><a class="nav-link" href="{% url 'registro' %}">Registrarse</a></li>
+<img src="{{request.user.avatar.imagen.url}}" alt="" height="40px">
+
+<a class="nav-bar" href="{%url 'EditarPerfil'%}">{{request.user.username}}</a>
+<form method= "post" action="{% url 'logout' %}">
+    {% csrf_token %}
+    <button type="submit">Logout</button>
+</form>
+<li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About</a></li>
+
+
+
+{% endblock %}  

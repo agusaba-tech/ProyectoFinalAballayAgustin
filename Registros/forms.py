@@ -9,6 +9,10 @@ class FormularioVend (forms.Form):
 class FormularioProd (forms.Form):
     Nombre = forms.CharField(max_length=30)
     Cantidad = forms.IntegerField()
+    descripcion=forms.CharField(max_length=60)
+    condicion=forms.CharField(max_length=30)
+   
+    
     
 # class Buscar(forms.Form):
 #     nombre = forms.CharField(max_length=20)
