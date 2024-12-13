@@ -14,5 +14,3 @@ class FormularioProd (forms.Form):
    
     
     
-# class Buscar(forms.Form):
-#     nombre = forms.CharField(max_length=20)

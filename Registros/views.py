@@ -71,8 +71,7 @@ def buscar(request):
 
     if request.GET["prod"]:
 
-          #respuesta = f"Estoy buscando el nro: {request.GET['prod']}"
-     
+              
           producto = request.GET['prod']
 
           cantidad = Producto.objects.filter(Nombre__icontains=producto)
